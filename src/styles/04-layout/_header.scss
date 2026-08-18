@@ -1,0 +1,26 @@
+.main-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem 2rem;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: #64748b;
+      &.active {
+        color: #3b82f6;
+        font-weight: 600;
+      }
+    }
+  }
+}

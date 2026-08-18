@@ -1,0 +1,8 @@
+// 7-in-1 Architecture Master Entrypoint (Dart Sass @use)
+@use '01-abstracts' as abstracts;
+@use '07-vendors' as vendors;
+@use '02-base' as base;
+@use '04-layout' as layout;
+@use '03-components' as components;
+@use '05-pages' as pages;
+@use '06-themes' as themes;
