@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { TanStackRouterVite } from '@tanstack/router-plugin/vite';
+import { tanstackRouter } from '@tanstack/router-plugin/vite';
 import path from 'path';
 
 export default defineConfig({
@@ -8,7 +8,7 @@ export default defineConfig({
     ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/`
     : '/',
   plugins: [
-    TanStackRouterVite({
+    tanstackRouter({
       target: 'react',
       autoCodeSplitting: true,
     }),
