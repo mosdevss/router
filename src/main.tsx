@@ -4,7 +4,10 @@ import { RouterProvider, createRouter } from '@tanstack/react-router';
 import { routeTree } from './routeTree.gen';
 import './styles/styles.scss';
 
-const router = createRouter({ routeTree });
+const router = createRouter({
+  routeTree,
+  basepath: import.meta.env.BASE_URL, // picks up Vite's `base` automatically
+});
 
 declare module '@tanstack/react-router' {
   interface Register {
